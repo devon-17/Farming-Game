@@ -63,13 +63,13 @@ public class PlotManager : MonoBehaviour
         if (isPlanted)
         {
             // plant is on last stage and is done planting AKA isPlanting false
-            if (plantStage == selectedPlant.plantStages.Length - 1 && !FarmManager.instance.isPlanting && !FarmManager.instance.isToolSelected)
+            if (plantStage == selectedPlant.plantStages.Length - 1 && !FarmManager.instance.isPlantSelected && !FarmManager.instance.isToolSelected)
             {
                 Harvest();
             }
         }
         // if isPlanting is true and you have enough money
-        else if (FarmManager.instance.isPlanting && FarmManager.instance.selectedPlant.plant.buyPrice <= FarmManager.instance.money && isPlotBought)
+        else if (FarmManager.instance.isPlantSelected && FarmManager.instance.selectedPlant.plant.buyPrice <= FarmManager.instance.money && isPlotBought)
         {
             Plant(FarmManager.instance.selectedPlant.plant);
         }
@@ -121,7 +121,7 @@ public class PlotManager : MonoBehaviour
 
     void OnMouseOver()
     {
-        if (FarmManager.instance.isPlanting)
+        if (FarmManager.instance.isPlantSelected)
         {
             // if there is a plant done or you dont have enough money
             if (isPlanted || FarmManager.instance.selectedPlant.plant.buyPrice > FarmManager.instance.money || !isPlotBought)
@@ -176,7 +176,7 @@ public class PlotManager : MonoBehaviour
     void OnMouseExit()
     {
         plot.color = Color.white;
-        FarmManager.instance.cursorFollowImg.gameObject.SetActive(false);
+        FarmManager.instance.cursor.gameObject.SetActive(false);
         Cursor.visible = true;
     }
 
@@ -224,24 +224,24 @@ public class PlotManager : MonoBehaviour
 
     public void CursorHover()
     {
-        if (!FarmManager.instance.cursorFollowImg)
+        if (!FarmManager.instance.cursor)
             return;
 
-        FarmManager.instance.cursorFollowImg.gameObject.SetActive(true);
-        FarmManager.instance.cursorFollowImg.transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition) + new Vector3(0f, 0f, 1f);
-        FarmManager.instance.cursorFollowImg.sprite = FarmManager.instance.selectedPlant.plant.icon;
-        FarmManager.instance.cursorFollowImg.transform.position = Input.mousePosition;
+        FarmManager.instance.cursor.gameObject.SetActive(true);
+        FarmManager.instance.cursor.transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition) + new Vector3(0f, 0f, 1f);
+        FarmManager.instance.cursor.sprite = FarmManager.instance.selectedPlant.plant.icon;
+        FarmManager.instance.cursor.transform.position = Input.mousePosition;
         Cursor.visible = false;
     }
 
     public void ToolCursorHover()
     {
-        if (!FarmManager.instance.cursorFollowImg)
+        if (!FarmManager.instance.cursor)
             return;
 
-        FarmManager.instance.cursorFollowImg.gameObject.SetActive(true);
-        FarmManager.instance.cursorFollowImg.transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition) + new Vector3(0f, 0f, 1f);
-        FarmManager.instance.cursorFollowImg.transform.position = Input.mousePosition;
+        FarmManager.instance.cursor.gameObject.SetActive(true);
+        FarmManager.instance.cursor.transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition) + new Vector3(0f, 0f, 1f);
+        FarmManager.instance.cursor.transform.position = Input.mousePosition;
         Cursor.visible = false;
 
         if (FarmManager.instance.isToolSelected)
@@ -249,13 +249,13 @@ public class PlotManager : MonoBehaviour
             switch (FarmManager.instance.selectedTool)
             {
                 case 1:
-                    FarmManager.instance.cursorFollowImg.sprite = toolIcons[0];
+                    FarmManager.instance.cursor.sprite = toolIcons[0];
                     break;
                 case 2:
-                    FarmManager.instance.cursorFollowImg.sprite = toolIcons[1];
+                    FarmManager.instance.cursor.sprite = toolIcons[1];
                     break;
                 case 3:
-                    FarmManager.instance.cursorFollowImg.sprite = toolIcons[2];
+                    FarmManager.instance.cursor.sprite = toolIcons[2];
                     break;
             }
         }

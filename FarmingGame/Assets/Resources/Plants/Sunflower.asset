@@ -22,4 +22,6 @@ MonoBehaviour:
   buyPrice: 15
   sellPrice: 19
   icon: {fileID: 3910405501714380444, guid: a30925af7faa84c44a495a5816d56ec2, type: 3}
+  iconBackground: {fileID: 2681219454394095494, guid: a30925af7faa84c44a495a5816d56ec2, type: 3}
+  iconBackgroundColor: {r: 1, g: 1, b: 1, a: 1}
   plantedWhileDry: {fileID: -4943352394623894318, guid: a5b6c0399f690924dae1ecd8c4fc1a83, type: 3}

@@ -11,5 +11,7 @@ public class Plant : ScriptableObject
     public int buyPrice;
     public int sellPrice;
     public Sprite icon;
+    public Sprite iconBackground;
+    public Color iconBackgroundColor;
     public Sprite plantedWhileDry;
 }

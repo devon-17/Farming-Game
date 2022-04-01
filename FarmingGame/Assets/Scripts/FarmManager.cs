@@ -6,22 +6,32 @@ using UnityEngine.UI;
 public class FarmManager : MonoBehaviour
 {
     public static FarmManager instance;
-    [HideInInspector] public PlantItem selectedPlant;
-    [HideInInspector] public bool isPlanting;
+
+    [HideInInspector]
+    public PlantItem selectedPlant;
+
+    [HideInInspector]
+    public bool isPlantSelected;
 
     [Header("Money/Cost")]
     public int money;
+
     public Text moneyText;
 
     [Header("Tools")]
-    [HideInInspector] public bool isToolSelected = false;
+    [HideInInspector]
+    public bool isToolSelected = false;
+
     public int selectedTool = 0; // 1-water, 2-fertilizer, 3-hoe
+
     public Image[] buttonImages;
+
     public Sprite originalButton;
+
     public Sprite selectedButton;
 
     [Header("Cursor")]
-    public Image cursorFollowImg;
+    public Image cursor;
 
     // Start is called before the first frame update
     void Start()
@@ -41,7 +51,7 @@ public class FarmManager : MonoBehaviour
             CheckSelection();
 
             selectedPlant = newPlant;
-            isPlanting = true;
+            isPlantSelected = true;
             Debug.Log("Selected " + selectedPlant.plant.plantName);
             selectedPlant.buttonText.text = "Cancel";
             // selectedPlant.buttonText.color = cancelColor;
@@ -64,14 +74,14 @@ public class FarmManager : MonoBehaviour
             buttonImages[toolNumber - 1].sprite = selectedButton;
         }
 
-        Debug.Log(toolNumber);
+        Debug.Log (toolNumber);
     }
 
     public void CheckSelection()
     {
-        if (isPlanting)
+        if (isPlantSelected)
         {
-            isPlanting = false;
+            isPlantSelected = false;
 
             // there is a plant selected
             if (selectedPlant)

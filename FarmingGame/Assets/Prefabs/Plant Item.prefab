@@ -135,6 +135,7 @@ MonoBehaviour:
   buttonText: {fileID: 159505301435709147}
   totalGrowTime: 0
   growTimeText: {fileID: 6304581176294215303}
+  iconBackground: {fileID: 159505300328848154}
 --- !u!1 &159505300328848152
 GameObject:
   m_ObjectHideFlags: 0
