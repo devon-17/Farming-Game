@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class FarmManager : MonoBehaviour
@@ -15,6 +16,8 @@ public class FarmManager : MonoBehaviour
 
     [Header("Money/Cost")]
     public int money;
+
+    public int farmTwoCost;
 
     public Text moneyText;
 
@@ -38,6 +41,13 @@ public class FarmManager : MonoBehaviour
     {
         instance = this;
         moneyText.text = "$" + money;
+    }
+
+    void Update()
+    {
+        if (money >= farmTwoCost)
+        {
+        }
     }
 
     public void SelectPlant(PlantItem newPlant)
@@ -105,5 +115,18 @@ public class FarmManager : MonoBehaviour
     {
         money += value; // adding value to money
         moneyText.text = "$" + money;
+    }
+
+    public void BuyNewFarm(string newFarm)
+    {
+        if (money >= farmTwoCost)
+        {
+            Debug.Log("Next Farm");
+            // SceneManager.LoadScene (newFarm);
+        }
+        else
+        {
+            Debug.LogError("Dont Have Enough Money");
+        }
     }
 }
