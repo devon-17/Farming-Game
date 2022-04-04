@@ -273,7 +273,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectedPlant: {fileID: 0}
   isPlantSelected: 0
-  money: 50
+  money: 177
   farmTwoCost: 100
   moneyText: {fileID: 1583358494}
   isToolSelected: 0
@@ -285,9 +285,6 @@ MonoBehaviour:
   originalButton: {fileID: 7122359577590926976, guid: a5b6c0399f690924dae1ecd8c4fc1a83, type: 3}
   selectedButton: {fileID: -7187093165402134859, guid: a5b6c0399f690924dae1ecd8c4fc1a83, type: 3}
   cursor: {fileID: 1136385792}
-  newFarmButton: {fileID: 544925849}
-  notificationText: {fileID: 543968559589508374, guid: 77991bdb63744f14291a5cda25cf1462, type: 3}
-  notificationSpawn: {fileID: 1273639811}
 --- !u!1001 &68383030
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1286,7 +1283,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Menu
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &544925852
@@ -2380,41 +2377,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 944bf9e8185cf5a448acf15b61bfb3f0, type: 3}
---- !u!1 &1273639811
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1273639812}
-  m_Layer: 5
-  m_Name: Notification Spawn
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1273639812
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1273639811}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1287688058}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -732, y: -381}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1287688054
 GameObject:
   m_ObjectHideFlags: 0
@@ -2510,7 +2472,6 @@ RectTransform:
   - {fileID: 1136385791}
   - {fileID: 948526095}
   - {fileID: 544925850}
-  - {fileID: 1273639812}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

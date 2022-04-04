@@ -36,15 +36,10 @@ public class FarmManager : MonoBehaviour
     [Header("Cursor")]
     public Image cursor;
 
-    [Header("New Farm's")]
-    public GameObject newFarmButton;
-    public Text notificationText;
-    public GameObject notificationSpawn;
-
     // Start is called before the first frame update
     void Start()
     {
-        DontDestroyOnLoad(this);
+        PlayerPrefs.SetInt("_money", money);
         instance = this;
         moneyText.text = "$" + money;
     }
@@ -83,7 +78,7 @@ public class FarmManager : MonoBehaviour
             buttonImages[toolNumber - 1].sprite = selectedButton;
         }
 
-        Debug.Log(toolNumber);
+        Debug.Log (toolNumber);
     }
 
     public void CheckSelection()
@@ -122,13 +117,14 @@ public class FarmManager : MonoBehaviour
         if (money >= farmTwoCost)
         {
             Debug.Log("Next Farm");
-            // SceneManager.LoadScene (newFarm);
+            Transaction(-farmTwoCost);
+            PlayerPrefs.SetInt("_money", money);
+            SceneManager.LoadScene (newFarm);
+            
         }
         else
         {
-            Instantiate(notificationText, notificationSpawn.transform.position, Quaternion.identity);
-            notificationText.text = "You Need $" + difference + " more";
-            Debug.LogError("Dont Have Enough Money");
+            Debug.Log("Dont Have Enough Money");
         }
     }
 }
