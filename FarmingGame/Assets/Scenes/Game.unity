@@ -285,6 +285,9 @@ MonoBehaviour:
   originalButton: {fileID: 7122359577590926976, guid: a5b6c0399f690924dae1ecd8c4fc1a83, type: 3}
   selectedButton: {fileID: -7187093165402134859, guid: a5b6c0399f690924dae1ecd8c4fc1a83, type: 3}
   cursor: {fileID: 1136385792}
+  newFarmButton: {fileID: 544925849}
+  notificationText: {fileID: 543968559589508374, guid: 77991bdb63744f14291a5cda25cf1462, type: 3}
+  notificationSpawn: {fileID: 1273639811}
 --- !u!1001 &68383030
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1227,8 +1230,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -1700.5818, y: 53.936523}
-  m_SizeDelta: {x: 378.8364, y: 59.8028}
+  m_AnchoredPosition: {x: -1684.6394, y: 53.936523}
+  m_SizeDelta: {x: 410.7212, y: 59.8028}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &544925851
 MonoBehaviour:
@@ -1319,7 +1322,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Buy Another Farm
+  m_Text: 'Buy Next Farm: $100'
 --- !u!222 &544925853
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1842,7 +1845,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 202737463}
   m_Direction: 2
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.5000001
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1964,8 +1967,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -1822, y: 1029}
-  m_SizeDelta: {x: 160, y: 35.9297}
+  m_AnchoredPosition: {x: -1817.6179, y: 1038.4944}
+  m_SizeDelta: {x: 168.764, y: 54.9185}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &948526096
 MonoBehaviour:
@@ -2377,6 +2380,41 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 944bf9e8185cf5a448acf15b61bfb3f0, type: 3}
+--- !u!1 &1273639811
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1273639812}
+  m_Layer: 5
+  m_Name: Notification Spawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1273639812
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1273639811}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1287688058}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -732, y: -381}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1287688054
 GameObject:
   m_ObjectHideFlags: 0
@@ -2472,6 +2510,7 @@ RectTransform:
   - {fileID: 1136385791}
   - {fileID: 948526095}
   - {fileID: 544925850}
+  - {fileID: 1273639812}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
