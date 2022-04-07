@@ -6,21 +6,39 @@ using UnityEngine.UI;
 public class PlotManager : MonoBehaviour
 {
     public static PlotManager instance;
+
     bool isPlanted = false;
+
     public SpriteRenderer plant;
+
     BoxCollider2D plantCollider;
-    [HideInInspector] public int plantStage = 0;
+
+    [HideInInspector]
+    public int plantStage = 0;
+
     float timer;
-    [HideInInspector] public Plant selectedPlant; // scriptable obj
+
+    [HideInInspector]
+    public Plant selectedPlant; // scriptable obj
+
     public Color availableColor = Color.green;
+
     public Color unavailableColor = Color.red;
+
     SpriteRenderer plot;
+
     private bool isDry = true;
+
     public Sprite drySprite;
+
     public Sprite normalSprite;
+
     public Sprite notBoughtSprite;
+
     public Sprite[] toolIcons;
+
     float speed = 1f;
+
     public bool isPlotBought = false;
 
     // Start is called before the first frame update
@@ -39,7 +57,6 @@ public class PlotManager : MonoBehaviour
         {
             plot.sprite = drySprite;
         }
-
     }
 
     // Update is called once per frame
@@ -63,13 +80,21 @@ public class PlotManager : MonoBehaviour
         if (isPlanted)
         {
             // plant is on last stage and is done planting AKA isPlanting false
-            if (plantStage == selectedPlant.plantStages.Length - 1 && !FarmManager.instance.isPlantSelected && !FarmManager.instance.isToolSelected)
+            if (
+                plantStage == selectedPlant.plantStages.Length - 1 &&
+                !FarmManager.instance.isPlantSelected &&
+                !FarmManager.instance.isToolSelected
+            )
             {
                 Harvest();
             }
-        }
-        // if isPlanting is true and you have enough money
-        else if (FarmManager.instance.isPlantSelected && FarmManager.instance.selectedPlant.plant.buyPrice <= FarmManager.instance.money && isPlotBought)
+        } // if isPlanting is true and you have enough money
+        else if (
+            FarmManager.instance.isPlantSelected &&
+            FarmManager.instance.selectedPlant.plant.buyPrice <=
+            FarmManager.instance.money &&
+            isPlotBought
+        )
         {
             Plant(FarmManager.instance.selectedPlant.plant);
         }
@@ -92,7 +117,6 @@ public class PlotManager : MonoBehaviour
                         }
                     }
                     break;
-
                 // if int = 2
                 case 2:
                     if (FarmManager.instance.money >= 10 && isPlotBought)
@@ -101,7 +125,6 @@ public class PlotManager : MonoBehaviour
                         if (speed < 2) speed += 0.2f;
                     }
                     break;
-
                 // if int  = 3
                 case 3:
                     if (FarmManager.instance.money >= 50 && !isPlotBought)
@@ -112,7 +135,6 @@ public class PlotManager : MonoBehaviour
                     }
 
                     break;
-
                 default:
                     break;
             }
@@ -124,7 +146,12 @@ public class PlotManager : MonoBehaviour
         if (FarmManager.instance.isPlantSelected)
         {
             // if there is a plant done or you dont have enough money
-            if (isPlanted || FarmManager.instance.selectedPlant.plant.buyPrice > FarmManager.instance.money || !isPlotBought)
+            if (
+                isPlanted ||
+                FarmManager.instance.selectedPlant.plant.buyPrice >
+                FarmManager.instance.money ||
+                !isPlotBought
+            )
             {
                 // cant buy
                 plot.color = unavailableColor;
@@ -143,7 +170,11 @@ public class PlotManager : MonoBehaviour
             {
                 case 1:
                 case 2:
-                    if (isPlotBought && FarmManager.instance.money >= (FarmManager.instance.selectedTool - 1) * 10)
+                    if (
+                        isPlotBought &&
+                        FarmManager.instance.money >=
+                        (FarmManager.instance.selectedTool - 1) * 10
+                    )
                     {
                         plot.color = availableColor;
                         ToolCursorHover();
@@ -224,36 +255,43 @@ public class PlotManager : MonoBehaviour
 
     public void CursorHover()
     {
-        if (!FarmManager.instance.cursor)
-            return;
+        if (!FarmManager.instance.cursor) return;
 
         FarmManager.instance.cursor.gameObject.SetActive(true);
-        FarmManager.instance.cursor.transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition) + new Vector3(0f, 0f, 1f);
-        FarmManager.instance.cursor.sprite = FarmManager.instance.selectedPlant.plant.icon;
+        FarmManager.instance.cursor.transform.position =
+            Camera.main.ScreenToWorldPoint(Input.mousePosition) +
+            new Vector3(0f, 0f, 1f);
+        FarmManager.instance.cursor.sprite =
+            FarmManager.instance.selectedPlant.plant.icon;
         FarmManager.instance.cursor.transform.position = Input.mousePosition;
         Cursor.visible = false;
     }
 
     public void ToolCursorHover()
     {
-        if (!FarmManager.instance.cursor)
-            return;
+        if (!FarmManager.instance.cursor) return;
 
         FarmManager.instance.cursor.gameObject.SetActive(true);
-        FarmManager.instance.cursor.transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition) + new Vector3(0f, 0f, 1f);
+        FarmManager.instance.cursor.transform.position =
+            Camera.main.ScreenToWorldPoint(Input.mousePosition) +
+            new Vector3(0f, 0f, 1f);
         FarmManager.instance.cursor.transform.position = Input.mousePosition;
         Cursor.visible = false;
 
+        // if there is a tool selected
         if (FarmManager.instance.isToolSelected)
         {
             switch (FarmManager.instance.selectedTool)
             {
+                // if water is selected
                 case 1:
                     FarmManager.instance.cursor.sprite = toolIcons[0];
                     break;
+                // if there is fertilizer selected
                 case 2:
                     FarmManager.instance.cursor.sprite = toolIcons[1];
                     break;
+                // if the hoe is selected
                 case 3:
                     FarmManager.instance.cursor.sprite = toolIcons[2];
                     break;

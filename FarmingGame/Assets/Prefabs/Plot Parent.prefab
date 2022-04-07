@@ -157,6 +157,7 @@ MonoBehaviour:
   - {fileID: -8316101745795507760, guid: a5b6c0399f690924dae1ecd8c4fc1a83, type: 3}
   - {fileID: -364341601124185504, guid: a5b6c0399f690924dae1ecd8c4fc1a83, type: 3}
   isPlotBought: 0
+  readyToHarvest: {fileID: 0}
 --- !u!60 &8526781545408564830
 PolygonCollider2D:
   m_ObjectHideFlags: 0

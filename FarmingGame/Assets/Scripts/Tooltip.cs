@@ -16,11 +16,7 @@ public class Tooltip : MonoBehaviour
     void Awake()
     {
         Instance = this;
-
-        if (gameObject.activeInHierarchy)
-        {
-            HideToolTip();
-        }
+        HideToolTip();
     }
 
     void Update()
