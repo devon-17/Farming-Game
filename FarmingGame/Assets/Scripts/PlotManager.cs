@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlotManager : MonoBehaviour
 {
@@ -27,7 +28,7 @@ public class PlotManager : MonoBehaviour
 
     SpriteRenderer plot;
 
-    private bool isDry = true;
+    [HideInInspector] public bool isDry = true;
 
     public Sprite drySprite;
 
@@ -110,6 +111,13 @@ public class PlotManager : MonoBehaviour
                     if (isPlotBought)
                     {
                         isDry = false;
+
+                        // checking for tutorial
+                        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Tutorial"))
+                        {
+                            Tutorial.instance.isWatered = true;
+                        }
+
                         plot.sprite = normalSprite;
                         if (isPlanted)
                         {
