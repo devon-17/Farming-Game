@@ -107,6 +107,8 @@ public class PlotManager : MonoBehaviour
             )
             {
                 Tutorial.instance.currentStep++;
+                Tutorial.instance.tutorialCanvas.SetActive(true);
+                Tutorial.instance.gameCanvas.SetActive(false);
             }
         }
 
@@ -129,6 +131,8 @@ public class PlotManager : MonoBehaviour
                         )
                         {
                             Tutorial.instance.currentStep++;
+                            Tutorial.instance.tutorialCanvas.SetActive(true);
+                            Tutorial.instance.gameCanvas.SetActive(false);
                         }
 
                         plot.sprite = normalSprite;
@@ -153,6 +157,17 @@ public class PlotManager : MonoBehaviour
                         isPlotBought = true;
                         FarmManager.instance.Transaction(-50);
                         plot.sprite = drySprite;
+
+                        // checking for tutorial
+                        if (
+                            SceneManager.GetActiveScene() ==
+                            SceneManager.GetSceneByName("Tutorial")
+                        )
+                        {
+                            Tutorial.instance.currentStep++;
+                            Tutorial.instance.tutorialCanvas.SetActive(true);
+                            Tutorial.instance.gameCanvas.SetActive(false);
+                        }
                     }
 
                     break;
@@ -241,6 +256,17 @@ public class PlotManager : MonoBehaviour
         plot.sprite = drySprite;
         FarmManager.instance.Transaction(selectedPlant.sellPrice); // + money for the sell price
         speed = 1f;
+
+        // checking for tutorial
+        if (
+            SceneManager.GetActiveScene() ==
+            SceneManager.GetSceneByName("Tutorial")
+        )
+        {
+            Tutorial.instance.currentStep++;
+            Tutorial.instance.tutorialCanvas.SetActive(true);
+            Tutorial.instance.gameCanvas.SetActive(false);
+        }
     }
 
     public void Plant(Plant newPlant)

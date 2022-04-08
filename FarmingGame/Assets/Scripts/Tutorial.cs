@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Tutorial : MonoBehaviour
@@ -10,6 +11,8 @@ public class Tutorial : MonoBehaviour
     public GameObject gameCanvas;
 
     public GameObject tutorialCanvas;
+
+    public GameObject continueButton;
 
     public Text tutorialText;
 
@@ -25,6 +28,7 @@ public class Tutorial : MonoBehaviour
 
         gameCanvas.SetActive(false);
         tutorialCanvas.SetActive(true);
+        continueButton.SetActive(false);
     }
 
     // Update is called once per frame
@@ -61,10 +65,6 @@ public class Tutorial : MonoBehaviour
         }
         else if (currentStep == 2)
         {
-            FarmManager.instance.CheckSelection();
-
-            tutorialCanvas.SetActive(true);
-            gameCanvas.SetActive(false);
             tutorialText.text =
                 "Now Plant Something By Clicking" +
                 '\n' +
@@ -78,27 +78,49 @@ public class Tutorial : MonoBehaviour
         }
         else if (currentStep == 3)
         {
-            tutorialCanvas.SetActive(true);
-            gameCanvas.SetActive(false);
             tutorialText.text =
-                "Now Plant Something By Clicking" +
+                "Now Harvest That Plant By Clicking" +
                 '\n' +
-                "On The 'Buy' Button" +
+                "The 'Harvest' Button In The Top Left" +
                 '\n' +
-                "Of The Plant You Want";
+                "Then Clicking On The Plant That Is Done";
+        }
+        else if (currentStep == 4)
+        {
+            tutorialText.text =
+                "Now Buy More Plots By Clicking On" +
+                '\n' +
+                "The Hoe Icon Button" +
+                '\n' +
+                "Then Clicking On The Plot You Want";
+        }
+        else if (currentStep == 5)
+        {
+            tutorialText.text =
+                "Your'e Done With The Tutorial" +
+                '\n' +
+                "Use Fertilizer To Speed Grow Time";
+
+            continueButton.SetActive(true);
         }
     }
 
     public void HideTutorial()
     {
-        if (buttonText.text != "Next")
-        {
-            gameCanvas.SetActive(true);
-            tutorialCanvas.SetActive(false);
-        }
-        else if (buttonText.text == "Next")
+        if (currentStep == 0)
         {
             currentStep++;
         }
+        else
+        {
+            gameCanvas.SetActive(true);
+            tutorialCanvas.SetActive(false);
+            Debug.Log("Clicked");
+        }
+    }
+
+    public void LoadNextFarm(string sceneToLoad)
+    {
+        SceneManager.LoadScene (sceneToLoad);
     }
 }

@@ -39,16 +39,24 @@ public class FarmManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // if there is a key for the money
-        if (PlayerPrefs.HasKey("_money"))
+        // checking for tutorial
+        if (
+            SceneManager.GetActiveScene() !=
+            SceneManager.GetSceneByName("Tutorial")
+        )
         {
-            money = PlayerPrefs.GetInt("_money");
-            Debug.Log("Money: " + PlayerPrefs.GetInt("_money"));
+            // if there is a key for the money
+            if (PlayerPrefs.HasKey("_money"))
+            {
+                money = PlayerPrefs.GetInt("_money");
+                Debug.Log("Money: " + PlayerPrefs.GetInt("_money"));
+            }
+            else
+            {
+                PlayerPrefs.SetInt("_money", money);
+            }
         }
-        else
-        {
-            PlayerPrefs.SetInt("_money", money);
-        }
+
         instance = this;
         moneyText.text = "$" + money;
     }
@@ -87,7 +95,7 @@ public class FarmManager : MonoBehaviour
             buttonImages[toolNumber - 1].sprite = selectedButton;
         }
 
-        Debug.Log(toolNumber);
+        Debug.Log (toolNumber);
     }
 
     public void CheckSelection()
