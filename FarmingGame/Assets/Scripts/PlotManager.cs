@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlotManager : MonoBehaviour
 {
@@ -28,7 +28,8 @@ public class PlotManager : MonoBehaviour
 
     SpriteRenderer plot;
 
-    [HideInInspector] public bool isDry = true;
+    [HideInInspector]
+    public bool isDry = true;
 
     public Sprite drySprite;
 
@@ -98,6 +99,15 @@ public class PlotManager : MonoBehaviour
         )
         {
             Plant(FarmManager.instance.selectedPlant.plant);
+
+            // checking for tutorial
+            if (
+                SceneManager.GetActiveScene() ==
+                SceneManager.GetSceneByName("Tutorial")
+            )
+            {
+                Tutorial.instance.currentStep++;
+            }
         }
 
         // if there is a tool selected AKA bool true
@@ -113,9 +123,12 @@ public class PlotManager : MonoBehaviour
                         isDry = false;
 
                         // checking for tutorial
-                        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Tutorial"))
+                        if (
+                            SceneManager.GetActiveScene() ==
+                            SceneManager.GetSceneByName("Tutorial")
+                        )
                         {
-                            Tutorial.instance.isWatered = true;
+                            Tutorial.instance.currentStep++;
                         }
 
                         plot.sprite = normalSprite;

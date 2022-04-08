@@ -2499,11 +2499,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameCanvas: {fileID: 1287688054}
+  tutorialCanvas: {fileID: 2047244931}
   tutorialText: {fileID: 715902027}
   buttonText: {fileID: 1444717052}
-  isWatered: 0
-  isPlanted: 0
-  isHarvested: 0
   currentStep: 0
 --- !u!1 &1478062410
 GameObject:
@@ -3155,7 +3153,7 @@ GameObject:
   - component: {fileID: 2047244934}
   - component: {fileID: 2047244933}
   m_Layer: 5
-  m_Name: BG
+  m_Name: Tutorial Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

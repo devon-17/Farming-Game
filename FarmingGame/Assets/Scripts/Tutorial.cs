@@ -6,10 +6,15 @@ using UnityEngine.UI;
 public class Tutorial : MonoBehaviour
 {
     public static Tutorial instance;
+
     public GameObject gameCanvas;
+
+    public GameObject tutorialCanvas;
+
     public Text tutorialText;
+
     public Text buttonText;
-    public bool isWatered, isPlanted, isHarvested;
+
     public int currentStep;
 
     // Start is called before the first frame update
@@ -17,11 +22,9 @@ public class Tutorial : MonoBehaviour
     {
         instance = this;
         currentStep = 0;
+
         gameCanvas.SetActive(false);
-        gameObject.SetActive(true);
-        isWatered = false;
-        isPlanted = false;
-        isHarvested = false;
+        tutorialCanvas.SetActive(true);
     }
 
     // Update is called once per frame
@@ -29,16 +32,15 @@ public class Tutorial : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            isWatered = true;
             if (gameCanvas.activeInHierarchy)
             {
                 gameCanvas.SetActive(false);
-                gameObject.SetActive(true);
+                tutorialCanvas.SetActive(true);
             }
             else
             {
                 gameCanvas.SetActive(false);
-                gameCanvas.SetActive(true);
+                tutorialCanvas.SetActive(true);
             }
         }
 
@@ -50,34 +52,53 @@ public class Tutorial : MonoBehaviour
         else if (currentStep == 1)
         {
             buttonText.text = "Close & Try";
-            tutorialText.text = "Water a Plot By Clicking" + '\n' + "The Water Icon Button" + '\n' + "Then Clicking On A Plot";
+            tutorialText.text =
+                "Water a Plot By Clicking" +
+                '\n' +
+                "The Water Icon Button" +
+                '\n' +
+                "Then Clicking On A Plot";
         }
         else if (currentStep == 2)
         {
-            tutorialText.text = "Now Plant Something By Clicking" + '\n' + "On The 'Buy' Button" + '\n' + "Of The Plant You Want";
-        }
+            FarmManager.instance.CheckSelection();
 
-        if (isWatered)
-        {
-            Debug.Log("Step One Done");
-            currentStep = 3;
+            tutorialCanvas.SetActive(true);
             gameCanvas.SetActive(false);
-            gameObject.SetActive(true);
+            tutorialText.text =
+                "Now Plant Something By Clicking" +
+                '\n' +
+                "On The 'Buy' Button" +
+                '\n' +
+                "Of The Plant You Want" +
+                '\n' +
+                "Then Clicking That Same" +
+                '\n' +
+                "Watered Plot";
+        }
+        else if (currentStep == 3)
+        {
+            tutorialCanvas.SetActive(true);
+            gameCanvas.SetActive(false);
+            tutorialText.text =
+                "Now Plant Something By Clicking" +
+                '\n' +
+                "On The 'Buy' Button" +
+                '\n' +
+                "Of The Plant You Want";
         }
     }
 
     public void HideTutorial()
     {
-        currentStep++;
         if (buttonText.text != "Next")
         {
             gameCanvas.SetActive(true);
-            gameObject.SetActive(false);
+            tutorialCanvas.SetActive(false);
         }
-    }
-
-    public void CheckingBools()
-    {
-
+        else if (buttonText.text == "Next")
+        {
+            currentStep++;
+        }
     }
 }
