@@ -52,4 +52,29 @@ public class SceneTransitions : MonoBehaviour
     {
         StartCoroutine(OpenSceneCo());
     }
+
+    public IEnumerator OpenSceneCo_WithParam(string nextScene)
+    {
+        yield return new WaitForSeconds(.5f);
+
+        fader.gameObject.SetActive(true);
+        LeanTween.scale(fader, Vector3.zero, 0f);
+        LeanTween.scale(fader, new Vector3(1, 1, 1), 0.7f).setOnComplete(() =>
+        {
+            if (nextScene != "")
+            {
+                SceneManager.LoadScene(nextScene);
+            }
+            else
+            {
+                Debug.Log("Scene to load is empty on");
+                return;
+            }
+        });
+    }
+
+    public void OpenScene_WithParam(string nextScene)
+    {
+        StartCoroutine(OpenSceneCo_WithParam(nextScene));
+    }
 }
