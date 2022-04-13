@@ -36,6 +36,13 @@ public class FarmManager : MonoBehaviour
     [Header("Cursor")]
     public Image cursor;
 
+    [Header("Next Farm")]
+    public bool isNextFarmBought;
+
+    public GameObject continueButton;
+
+    public GameObject nextFarmButton;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -54,6 +61,38 @@ public class FarmManager : MonoBehaviour
             else
             {
                 PlayerPrefs.SetInt("_money", money);
+            }
+        }
+
+        // if we are on farm one
+        if (
+            SceneManager.GetActiveScene() ==
+            SceneManager.GetSceneByName("Farm One")
+        )
+        {
+            // if we have the key for next farm int/bool
+            if (PlayerPrefs.HasKey("_next_farm"))
+            {
+                // if int = 1 which means true
+                if (PlayerPrefs.GetInt("_next_farm") == 1)
+                {
+                    continueButton.SetActive(true);
+                    nextFarmButton.SetActive(false);
+                }
+                else if (
+                    PlayerPrefs.GetInt("_next_farm") == 0 // if int = 0 which means true
+                )
+                {
+                    continueButton.SetActive(false);
+                    nextFarmButton.SetActive(true);
+                }
+            } // we dont have the key saved in player prefs
+            else
+            {
+                isNextFarmBought = false;
+                continueButton.SetActive(false);
+                nextFarmButton.SetActive(true);
+                PlayerPrefs.SetInt("_next_farm", BoolToInt(isNextFarmBought));
             }
         }
 
@@ -137,10 +176,27 @@ public class FarmManager : MonoBehaviour
             Transaction(-farmTwoCost);
             PlayerPrefs.SetInt("_money", money);
             SceneTransitions.instance.OpenScene();
+
+            // setting for player prefs
+            isNextFarmBought = true;
+            PlayerPrefs.SetInt("_next_farm", BoolToInt(isNextFarmBought));
         }
         else
         {
             Debug.Log("Dont Have Enough Money");
+        }
+    }
+
+    public int BoolToInt(bool value)
+    {
+        // if the bool is false set int to 0
+        if (!value)
+        {
+            return 0;
+        }
+        else
+        {
+            return 1;
         }
     }
 }

@@ -15,11 +15,11 @@ C:/Users/br.nx/Documents/GitHub/Farming-Game/FarmingGame
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-65494
+56718
 Successfully changed project path to: C:/Users/br.nx/Documents/GitHub/Farming-Game/FarmingGame
 C:/Users/br.nx/Documents/GitHub/Farming-Game/FarmingGame
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 99.86 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 99.46 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.7f1 (d91830b65d9b)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity 2021.1.7f1/Editor/Data/Resources/UnitySubsystems
@@ -35,197 +35,121 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity 2021.1.7f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity 2021.1.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity 2021.1.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56936
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56812
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity 2021.1.7f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity 2021.1.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001823 seconds.
+Registered in 0.001896 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 88.23 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 174.16 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.202 seconds
+- Completed reload, in  1.555 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002711 seconds.
+Registered in 0.003159 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\br.nx\Documents\GitHub\Farming-Game\FarmingGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\br.nx\Documents\GitHub\Farming-Game\FarmingGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 89.10 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 124.68 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.025 seconds
+- Completed reload, in  1.752 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 0.92 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3463 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 131.8 MB.
 System memory in use after: 132.0 MB.
 
 Unloading 23 unused Assets to reduce memory usage. Loaded Objects now: 3925.
-Total: 2.188000 ms (FindLiveObjects: 0.251400 ms CreateObjectMapping: 0.165200 ms MarkObjects: 1.716000 ms  DeleteObjects: 0.054500 ms)
+Total: 3.557700 ms (FindLiveObjects: 0.337200 ms CreateObjectMapping: 0.190100 ms MarkObjects: 2.963800 ms  DeleteObjects: 0.065200 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Scenes/Tutorial.unity
-  artifactKey: Guid(20c9f34086e10ad40bb4336952a69c53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Tutorial.unity using Guid(20c9f34086e10ad40bb4336952a69c53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d5b93373e90c2dea3c436f98a6fe2c8') in 0.011766 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 103.862756 seconds.
-  path: Assets/Scripts/Tutorial.cs
-  artifactKey: Guid(f298928886038c249b9592876c18804e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Tutorial.cs using Guid(f298928886038c249b9592876c18804e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1966fee40b2d230f6a57f47d7043814b') in 0.028571 seconds 
+  path: Assets/Scripts/FarmManager.cs
+  artifactKey: Guid(a66a04e60000ad94aaff06fb29f34ec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FarmManager.cs using Guid(a66a04e60000ad94aaff06fb29f34ec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bab69e1acd373300badecb120d1507ac') in 0.050294 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002770 seconds.
+Registered in 0.003305 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\br.nx\Documents\GitHub\Farming-Game\FarmingGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\br.nx\Documents\GitHub\Farming-Game\FarmingGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.82 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.899 seconds
+- Completed reload, in  0.999 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.64 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3451 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 131.1 MB.
 System memory in use after: 131.3 MB.
 
 Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3929.
-Total: 2.172600 ms (FindLiveObjects: 0.270700 ms CreateObjectMapping: 0.184700 ms MarkObjects: 1.697400 ms  DeleteObjects: 0.019000 ms)
+Total: 3.469400 ms (FindLiveObjects: 0.425000 ms CreateObjectMapping: 0.280700 ms MarkObjects: 2.734900 ms  DeleteObjects: 0.027400 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002733 seconds.
+Registered in 0.003278 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\br.nx\Documents\GitHub\Farming-Game\FarmingGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\br.nx\Documents\GitHub\Farming-Game\FarmingGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.870 seconds
+- Completed reload, in  1.056 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.68 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3451 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 131.1 MB.
 System memory in use after: 131.4 MB.
 
 Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3933.
-Total: 2.562500 ms (FindLiveObjects: 0.246900 ms CreateObjectMapping: 0.156100 ms MarkObjects: 2.138000 ms  DeleteObjects: 0.020800 ms)
+Total: 2.301700 ms (FindLiveObjects: 0.263900 ms CreateObjectMapping: 0.164600 ms MarkObjects: 1.852300 ms  DeleteObjects: 0.020000 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002714 seconds.
+Registered in 0.004187 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\br.nx\Documents\GitHub\Farming-Game\FarmingGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\br.nx\Documents\GitHub\Farming-Game\FarmingGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.64 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.01 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.034 seconds
+- Completed reload, in  0.962 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.01 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.77 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3451 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 131.2 MB.
 System memory in use after: 131.4 MB.
 
 Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3937.
-Total: 2.241700 ms (FindLiveObjects: 0.287900 ms CreateObjectMapping: 0.171400 ms MarkObjects: 1.763600 ms  DeleteObjects: 0.017800 ms)
+Total: 3.526900 ms (FindLiveObjects: 0.425200 ms CreateObjectMapping: 0.250300 ms MarkObjects: 2.819900 ms  DeleteObjects: 0.029800 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002792 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\br.nx\Documents\GitHub\Farming-Game\FarmingGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\br.nx\Documents\GitHub\Farming-Game\FarmingGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.03 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.915 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3451 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 131.2 MB.
-System memory in use after: 131.4 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3941.
-Total: 3.787500 ms (FindLiveObjects: 0.372800 ms CreateObjectMapping: 0.322700 ms MarkObjects: 3.062800 ms  DeleteObjects: 0.027800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004129 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\br.nx\Documents\GitHub\Farming-Game\FarmingGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\br.nx\Documents\GitHub\Farming-Game\FarmingGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.921 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3451 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 131.2 MB.
-System memory in use after: 131.5 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3945.
-Total: 2.649200 ms (FindLiveObjects: 0.304500 ms CreateObjectMapping: 0.205200 ms MarkObjects: 2.115200 ms  DeleteObjects: 0.023400 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 920.541400 seconds.
-  path: Assets/Sprites/UPDATED Farm Items Extra.png
-  artifactKey: Guid(2d6a5c92e69cee04b9854e442dd5f12f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/UPDATED Farm Items Extra.png using Guid(2d6a5c92e69cee04b9854e442dd5f12f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9484c823c8faf35b5c49f7058c53789') in 0.097810 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.292332 seconds.
-  path: Assets/Sprites/UPDATED Farm Items.png
-  artifactKey: Guid(4034895910b41024298dc0285b02d34b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/UPDATED Farm Items.png using Guid(4034895910b41024298dc0285b02d34b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29996756de7866991129cc5791699300') in 0.020296 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 18.605183 seconds.
-  path: Assets/Sprites/UPDATED Farm Items.png
-  artifactKey: Guid(4034895910b41024298dc0285b02d34b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/UPDATED Farm Items.png using Guid(4034895910b41024298dc0285b02d34b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a7ff0027a28ac51be1ef2f0e5730f6d') in 0.014305 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 22.879164 seconds.
-  path: Assets/Sprites/UPDATED Farm Items.png
-  artifactKey: Guid(4034895910b41024298dc0285b02d34b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/UPDATED Farm Items.png using Guid(4034895910b41024298dc0285b02d34b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2797038346d98a871b374e81ec084a7c') in 0.051651 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003177 seconds.
+Registered in 0.003201 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\br.nx\Documents\GitHub\Farming-Game\FarmingGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\br.nx\Documents\GitHub\Farming-Game\FarmingGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
@@ -234,15 +158,374 @@ Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.996 seconds
+- Completed reload, in  0.924 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3451 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 131.2 MB.
+System memory in use after: 131.4 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3941.
+Total: 3.663200 ms (FindLiveObjects: 0.512800 ms CreateObjectMapping: 0.305300 ms MarkObjects: 2.817100 ms  DeleteObjects: 0.025500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002941 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\br.nx\Documents\GitHub\Farming-Game\FarmingGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\br.nx\Documents\GitHub\Farming-Game\FarmingGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.98 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.928 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3451 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 131.2 MB.
+System memory in use after: 131.4 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3945.
+Total: 2.117800 ms (FindLiveObjects: 0.239400 ms CreateObjectMapping: 0.154800 ms MarkObjects: 1.707500 ms  DeleteObjects: 0.015300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002745 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\br.nx\Documents\GitHub\Farming-Game\FarmingGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\br.nx\Documents\GitHub\Farming-Game\FarmingGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.988 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.68 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3451 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 131.2 MB.
+System memory in use after: 131.5 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3949.
+Total: 2.320400 ms (FindLiveObjects: 0.247200 ms CreateObjectMapping: 0.160400 ms MarkObjects: 1.892500 ms  DeleteObjects: 0.019300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002723 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\br.nx\Documents\GitHub\Farming-Game\FarmingGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\br.nx\Documents\GitHub\Farming-Game\FarmingGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.911 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3451 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 131.2 MB.
+System memory in use after: 131.5 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3953.
+Total: 2.605300 ms (FindLiveObjects: 0.239900 ms CreateObjectMapping: 0.169100 ms MarkObjects: 2.166400 ms  DeleteObjects: 0.028500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003413 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\br.nx\Documents\GitHub\Farming-Game\FarmingGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\br.nx\Documents\GitHub\Farming-Game\FarmingGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.68 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.907 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.22 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3451 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 131.2 MB.
+System memory in use after: 131.5 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3957.
+Total: 2.426700 ms (FindLiveObjects: 0.290700 ms CreateObjectMapping: 0.189900 ms MarkObjects: 1.929700 ms  DeleteObjects: 0.015200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002910 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\br.nx\Documents\GitHub\Farming-Game\FarmingGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\br.nx\Documents\GitHub\Farming-Game\FarmingGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.994 seconds
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3453 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 145.7 MB.
-System memory in use after: 146.0 MB.
+Unloading 3451 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 131.2 MB.
+System memory in use after: 131.5 MB.
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4033.
-Total: 2.183700 ms (FindLiveObjects: 0.254400 ms CreateObjectMapping: 0.154500 ms MarkObjects: 1.757600 ms  DeleteObjects: 0.016400 ms)
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3961.
+Total: 2.272300 ms (FindLiveObjects: 0.258700 ms CreateObjectMapping: 0.167100 ms MarkObjects: 1.824900 ms  DeleteObjects: 0.020400 ms)
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003012 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\br.nx\Documents\GitHub\Farming-Game\FarmingGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\br.nx\Documents\GitHub\Farming-Game\FarmingGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.01 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.995 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3451 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 131.2 MB.
+System memory in use after: 131.5 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3965.
+Total: 2.133300 ms (FindLiveObjects: 0.250900 ms CreateObjectMapping: 0.162100 ms MarkObjects: 1.703200 ms  DeleteObjects: 0.016400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1194.183944 seconds.
+  path: Assets/Scenes/Farm Two.unity
+  artifactKey: Guid(37f2b07a3ea4d6f4b95256070fb74846) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Farm Two.unity using Guid(37f2b07a3ea4d6f4b95256070fb74846) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcf3570e355db408aa003101fe5cb58a') in 0.013503 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002982 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\br.nx\Documents\GitHub\Farming-Game\FarmingGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\br.nx\Documents\GitHub\Farming-Game\FarmingGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.906 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3451 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 131.3 MB.
+System memory in use after: 131.5 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3969.
+Total: 2.853800 ms (FindLiveObjects: 0.282100 ms CreateObjectMapping: 0.244800 ms MarkObjects: 2.299700 ms  DeleteObjects: 0.026100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 93.486670 seconds.
+  path: Assets/Scenes/Farm One.unity
+  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Farm One.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23a9ca1084b3a5e267a85246435eeb31') in 0.019001 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002933 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\br.nx\Documents\GitHub\Farming-Game\FarmingGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\br.nx\Documents\GitHub\Farming-Game\FarmingGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.921 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3451 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 131.3 MB.
+System memory in use after: 131.5 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3973.
+Total: 2.295500 ms (FindLiveObjects: 0.325700 ms CreateObjectMapping: 0.194400 ms MarkObjects: 1.760300 ms  DeleteObjects: 0.014000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004158 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\br.nx\Documents\GitHub\Farming-Game\FarmingGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\br.nx\Documents\GitHub\Farming-Game\FarmingGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.903 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.90 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3451 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 131.3 MB.
+System memory in use after: 131.5 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3977.
+Total: 3.625800 ms (FindLiveObjects: 0.284000 ms CreateObjectMapping: 0.199200 ms MarkObjects: 3.121900 ms  DeleteObjects: 0.019600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003003 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\br.nx\Documents\GitHub\Farming-Game\FarmingGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\br.nx\Documents\GitHub\Farming-Game\FarmingGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.895 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.69 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3451 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 131.3 MB.
+System memory in use after: 131.5 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3981.
+Total: 2.178500 ms (FindLiveObjects: 0.251500 ms CreateObjectMapping: 0.172200 ms MarkObjects: 1.736100 ms  DeleteObjects: 0.017700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002767 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\br.nx\Documents\GitHub\Farming-Game\FarmingGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\br.nx\Documents\GitHub\Farming-Game\FarmingGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.886 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.70 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3451 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 131.3 MB.
+System memory in use after: 131.5 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3985.
+Total: 2.794500 ms (FindLiveObjects: 0.272600 ms CreateObjectMapping: 0.194200 ms MarkObjects: 2.292500 ms  DeleteObjects: 0.034100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 380.511852 seconds.
+  path: Assets/Prefabs/Grid.prefab
+  artifactKey: Guid(2d7eea136f1dd224bbd9a762bf9b261e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Grid.prefab using Guid(2d7eea136f1dd224bbd9a762bf9b261e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '476e3d0f80e7987e4f81bc3c197bd70c') in 0.037347 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002868 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\br.nx\Documents\GitHub\Farming-Game\FarmingGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\br.nx\Documents\GitHub\Farming-Game\FarmingGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.966 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.66 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3451 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 131.3 MB.
+System memory in use after: 131.6 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 3989.
+Total: 2.713400 ms (FindLiveObjects: 0.402600 ms CreateObjectMapping: 0.216400 ms MarkObjects: 2.069200 ms  DeleteObjects: 0.024200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 97.675718 seconds.
+  path: Assets/Sprites/UPDATED Farm Items Extra.png
+  artifactKey: Guid(2d6a5c92e69cee04b9854e442dd5f12f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/UPDATED Farm Items Extra.png using Guid(2d6a5c92e69cee04b9854e442dd5f12f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '861415e15e7cb9edf8325e19400f3f86') in 0.089698 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.645306 seconds.
+  path: Assets/Sprites/UPDATED Farm Items Extra.png
+  artifactKey: Guid(2d6a5c92e69cee04b9854e442dd5f12f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/UPDATED Farm Items Extra.png using Guid(2d6a5c92e69cee04b9854e442dd5f12f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b8e00fdee3b8dbab5a7947d8f6b48d8') in 0.058775 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 51.518443 seconds.
+  path: Assets/Prefabs/Snow Plot.prefab
+  artifactKey: Guid(fd6f6a93cbae1dd48bb37fa73e953fff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Snow Plot.prefab using Guid(fd6f6a93cbae1dd48bb37fa73e953fff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86263771e2e0443468d0a6c8528dbe16') in 0.034118 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 52.325003 seconds.
+  path: Assets/Prefabs/PlotBrush 1.asset
+  artifactKey: Guid(70e6719f8a08a1645ba403e013a939cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PlotBrush 1.asset using Guid(70e6719f8a08a1645ba403e013a939cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35d4af409155ea31378740ae023c4052') in 0.010673 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.550291 seconds.
+  path: Assets/Prefabs/SnowBrush.asset
+  artifactKey: Guid(70e6719f8a08a1645ba403e013a939cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/SnowBrush.asset using Guid(70e6719f8a08a1645ba403e013a939cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5413258cb7742f22655fcd23fee8ac6') in 0.006614 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 52.144860 seconds.
+  path: Assets/Scenes/Farm Two.unity
+  artifactKey: Guid(37f2b07a3ea4d6f4b95256070fb74846) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Farm Two.unity using Guid(37f2b07a3ea4d6f4b95256070fb74846) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e9febc6f2260c9091950b7c327d87a8') in 0.003316 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002868 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\br.nx\Documents\GitHub\Farming-Game\FarmingGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\br.nx\Documents\GitHub\Farming-Game\FarmingGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.968 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.26 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3452 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 141.5 MB.
+System memory in use after: 141.7 MB.
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 4040.
+Total: 2.326200 ms (FindLiveObjects: 0.298300 ms CreateObjectMapping: 0.193600 ms MarkObjects: 1.817100 ms  DeleteObjects: 0.016600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.734124 seconds.
+  path: Assets/Scripts/PlotManager.cs
+  artifactKey: Guid(eef223bb1eb1fde45b701446dca85649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlotManager.cs using Guid(eef223bb1eb1fde45b701446dca85649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '335fc6de07a2308d1ed8750ba5205dcc') in 0.006976 seconds 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
