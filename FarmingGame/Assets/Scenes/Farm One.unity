@@ -3864,7 +3864,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6910010774727612674, guid: 2d7eea136f1dd224bbd9a762bf9b261e, type: 3}
       propertyPath: money
-      value: 50
+      value: 140
       objectReference: {fileID: 0}
     - target: {fileID: 6910010774727612674, guid: 2d7eea136f1dd224bbd9a762bf9b261e, type: 3}
       propertyPath: cursor
