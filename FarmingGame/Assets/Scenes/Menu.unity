@@ -753,7 +753,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1001 &1573389045
+--- !u!1001 &1327349035
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -807,18 +807,6 @@ PrefabInstance:
     - target: {fileID: 5729137696179803163, guid: 944bf9e8185cf5a448acf15b61bfb3f0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8526781545408564830, guid: 944bf9e8185cf5a448acf15b61bfb3f0, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8526781545408564831, guid: 944bf9e8185cf5a448acf15b61bfb3f0, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8526781545408564831, guid: 944bf9e8185cf5a448acf15b61bfb3f0, type: 3}
-      propertyPath: isPlotBought
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 944bf9e8185cf5a448acf15b61bfb3f0, type: 3}
