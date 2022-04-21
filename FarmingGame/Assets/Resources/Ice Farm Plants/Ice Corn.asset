@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4d8cb4e2b51464c4293e12415aecb38b, type: 3}
-  m_Name: Ice Sunflower
+  m_Name: Ice Corn
   m_EditorClassIdentifier: 
-  plantName: Ice Sunflower
+  plantName: Ice Corn
   plantStages:
-  - {fileID: -596773373364728228, guid: a30925af7faa84c44a495a5816d56ec2, type: 3}
-  - {fileID: -7042374689226477266, guid: a30925af7faa84c44a495a5816d56ec2, type: 3}
-  - {fileID: 7530643719807144909, guid: a30925af7faa84c44a495a5816d56ec2, type: 3}
-  - {fileID: 6274847180039180657, guid: a30925af7faa84c44a495a5816d56ec2, type: 3}
+  - {fileID: -2243732589849547616, guid: a30925af7faa84c44a495a5816d56ec2, type: 3}
+  - {fileID: 4506980375917697221, guid: a30925af7faa84c44a495a5816d56ec2, type: 3}
+  - {fileID: 6205673657870114336, guid: a30925af7faa84c44a495a5816d56ec2, type: 3}
+  - {fileID: 6881750370916773083, guid: a30925af7faa84c44a495a5816d56ec2, type: 3}
   timeBetweenStages: 3
-  buyPrice: 25
-  sellPrice: 32
-  icon: {fileID: 3910405501714380444, guid: a30925af7faa84c44a495a5816d56ec2, type: 3}
+  buyPrice: 22
+  sellPrice: 35
+  icon: {fileID: -8344284950600746447, guid: a30925af7faa84c44a495a5816d56ec2, type: 3}
   iconBackground: {fileID: 2681219454394095494, guid: a30925af7faa84c44a495a5816d56ec2, type: 3}
   iconBackgroundColor: {r: 0, g: 1, b: 1, a: 1}
   plantedWhileDry: {fileID: -4943352394623894318, guid: a5b6c0399f690924dae1ecd8c4fc1a83, type: 3}
