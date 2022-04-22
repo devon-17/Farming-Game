@@ -9,6 +9,8 @@ public class StoreManager : MonoBehaviour
 
     List<Plant> plantObjects = new List<Plant>();
 
+    List<Plant> icePlants = new List<Plant>();
+
     void Awake()
     {
         var loadPlants =
@@ -26,26 +28,26 @@ public class StoreManager : MonoBehaviour
             newPlant.plant = plant;
         }
 
-        // if (
-        //     SceneManager.GetActiveScene() ==
-        //     SceneManager.GetSceneByName("Farm Two")
-        // )
-        // {
-        //     var loadIcePlants =
-        //         Resources.LoadAll("Ice Farm Plants", typeof (Plant));
-        //     foreach (var plant in loadIcePlants)
-        //     {
-        //         plantObjects.Add((Plant) plant);
-        //     }
-        //     plantObjects.Sort (SortByPrice);
+        if (
+            SceneManager.GetActiveScene() ==
+            SceneManager.GetSceneByName("Farm Two")
+        )
+        {
+            var loadIcePlants =
+                Resources.LoadAll("Ice Farm Plants", typeof (Plant));
+            foreach (var plant in loadIcePlants)
+            {
+                icePlants.Add((Plant) plant);
+            }
+            icePlants.Sort (SortByPrice);
 
-        //     foreach (var plant in plantObjects)
-        //     {
-        //         PlantItem newPlant =
-        //             Instantiate(plantItem, transform).GetComponent<PlantItem>();
-        //         newPlant.plant = plant;
-        //     }
-        // }
+            foreach (var plant in icePlants)
+            {
+                PlantItem newPlant =
+                    Instantiate(plantItem, transform).GetComponent<PlantItem>();
+                newPlant.plant = plant;
+            }
+        }
     }
 
     int SortByPrice(Plant plantObjectOne, Plant plantObjectTwo)

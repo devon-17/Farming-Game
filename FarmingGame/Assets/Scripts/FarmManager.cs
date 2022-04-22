@@ -43,6 +43,15 @@ public class FarmManager : MonoBehaviour
 
     public GameObject nextFarmButton;
 
+    [Header("Farm Two")]
+    public bool isFreePlayReached = false;
+
+    public GameObject gameOverPanel;
+
+    public GameObject harvestButton;
+
+    public GameObject backButton;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -98,6 +107,27 @@ public class FarmManager : MonoBehaviour
 
         instance = this;
         moneyText.text = "$" + money;
+    }
+
+    void Update()
+    {
+        if (
+            SceneManager.GetActiveScene() ==
+            SceneManager.GetSceneByName("Farm Two")
+        )
+        {
+            if (money >= 150)
+            {
+                isFreePlayReached = true;
+            }
+        }
+
+        if (isFreePlayReached)
+        {
+            gameOverPanel.SetActive(true);
+            harvestButton.SetActive(false);
+            backButton.SetActive(false);
+        }
     }
 
     public void SelectPlant(PlantItem newPlant)
@@ -198,5 +228,12 @@ public class FarmManager : MonoBehaviour
         {
             return 1;
         }
+    }
+
+    public void CloseEverything()
+    {
+        gameOverPanel.SetActive(false);
+        harvestButton.SetActive(true);
+        backButton.SetActive(true);
     }
 }

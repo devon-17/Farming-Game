@@ -1743,7 +1743,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 202737463}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.5000001
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -3874,6 +3874,10 @@ PrefabInstance:
       propertyPath: moneyText
       value: 
       objectReference: {fileID: 1583358494}
+    - target: {fileID: 6910010774727612674, guid: 2d7eea136f1dd224bbd9a762bf9b261e, type: 3}
+      propertyPath: farmTwoCost
+      value: 90
+      objectReference: {fileID: 0}
     - target: {fileID: 6910010774727612674, guid: 2d7eea136f1dd224bbd9a762bf9b261e, type: 3}
       propertyPath: continueButton
       value: 
