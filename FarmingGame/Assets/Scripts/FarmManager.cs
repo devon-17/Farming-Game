@@ -164,7 +164,7 @@ public class FarmManager : MonoBehaviour
             buttonImages[toolNumber - 1].sprite = selectedButton;
         }
 
-        Debug.Log (toolNumber);
+        Debug.Log(toolNumber);
     }
 
     public void CheckSelection()
@@ -232,8 +232,9 @@ public class FarmManager : MonoBehaviour
 
     public void CloseEverything()
     {
-        gameOverPanel.SetActive(false);
+        Debug.Log("Close Everything");
         harvestButton.SetActive(true);
         backButton.SetActive(true);
+        // gameOverPanel.SetActive(false);
     }
 }
