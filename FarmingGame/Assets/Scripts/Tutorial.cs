@@ -99,7 +99,7 @@ public class Tutorial : MonoBehaviour
             tutorialText.text =
                 "Your'e Done With The Tutorial" +
                 '\n' +
-                "Use Fertilizer To Speed Grow Time";
+                "Use More Tools & Buy Different Plants";
 
             continueButton.SetActive(true);
         }

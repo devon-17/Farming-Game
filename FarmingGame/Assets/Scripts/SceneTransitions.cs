@@ -3,17 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+
 public class SceneTransitions : MonoBehaviour
 {
     public static SceneTransitions instance;
+
     public RectTransform fader;
+
     public string sceneToLoad;
 
     // Start is called before the first frame update
     void Start()
     {
         instance = this;
-        StartCoroutine(FadeInCo());
+
+        bool isNotMenu =
+            SceneManager.GetActiveScene() !=
+            SceneManager.GetSceneByName("Menu");
+
+        if (isNotMenu)
+        {
+            StartCoroutine(FadeInCo());
+        }
     }
 
     public IEnumerator FadeInCo()
@@ -22,10 +33,12 @@ public class SceneTransitions : MonoBehaviour
 
         fader.gameObject.SetActive(true);
         LeanTween.scale(fader, new Vector3(1, 1, 1), 0);
-        LeanTween.scale(fader, Vector3.zero, 0.7f).setOnComplete(() =>
-        {
-            fader.gameObject.SetActive(false);
-        });
+        LeanTween
+            .scale(fader, Vector3.zero, 0.7f)
+            .setOnComplete(() =>
+            {
+                fader.gameObject.SetActive(false);
+            });
     }
 
     public IEnumerator OpenSceneCo()
@@ -34,18 +47,20 @@ public class SceneTransitions : MonoBehaviour
 
         fader.gameObject.SetActive(true);
         LeanTween.scale(fader, Vector3.zero, 0f);
-        LeanTween.scale(fader, new Vector3(1, 1, 1), 0.7f).setOnComplete(() =>
-        {
-            if (sceneToLoad != "")
+        LeanTween
+            .scale(fader, new Vector3(1, 1, 1), 0.7f)
+            .setOnComplete(() =>
             {
-                SceneManager.LoadScene(sceneToLoad);
-            }
-            else
-            {
-                Debug.Log("Scene to load is empty on");
-                return;
-            }
-        });
+                if (sceneToLoad != "")
+                {
+                    SceneManager.LoadScene (sceneToLoad);
+                }
+                else
+                {
+                    Debug.Log("Scene to load is empty on");
+                    return;
+                }
+            });
     }
 
     public void OpenScene()
@@ -59,18 +74,20 @@ public class SceneTransitions : MonoBehaviour
 
         fader.gameObject.SetActive(true);
         LeanTween.scale(fader, Vector3.zero, 0f);
-        LeanTween.scale(fader, new Vector3(1, 1, 1), 0.7f).setOnComplete(() =>
-        {
-            if (nextScene != "")
+        LeanTween
+            .scale(fader, new Vector3(1, 1, 1), 0.7f)
+            .setOnComplete(() =>
             {
-                SceneManager.LoadScene(nextScene);
-            }
-            else
-            {
-                Debug.Log("Scene to load is empty on");
-                return;
-            }
-        });
+                if (nextScene != "")
+                {
+                    SceneManager.LoadScene (nextScene);
+                }
+                else
+                {
+                    Debug.Log("Scene to load is empty on");
+                    return;
+                }
+            });
     }
 
     public void OpenScene_WithParam(string nextScene)

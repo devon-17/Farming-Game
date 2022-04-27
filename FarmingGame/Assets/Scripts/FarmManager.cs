@@ -44,8 +44,6 @@ public class FarmManager : MonoBehaviour
     public GameObject nextFarmButton;
 
     [Header("Farm Two")]
-    public bool isFreePlayReached = false;
-
     public GameObject gameOverPanel;
 
     public GameObject harvestButton;
@@ -107,6 +105,8 @@ public class FarmManager : MonoBehaviour
 
         instance = this;
         moneyText.text = "$" + money;
+
+        gameOverPanel.SetActive(false);
     }
 
     void Update()
@@ -118,15 +118,18 @@ public class FarmManager : MonoBehaviour
         {
             if (money >= 150)
             {
-                isFreePlayReached = true;
+                if (!gameOverPanel)
+                {
+                    harvestButton.SetActive(true);
+                    backButton.SetActive(true);
+                }
+                else
+                {
+                    gameOverPanel.SetActive(true);
+                    harvestButton.SetActive(false);
+                    backButton.SetActive(false);
+                }
             }
-        }
-
-        if (isFreePlayReached)
-        {
-            gameOverPanel.SetActive(true);
-            harvestButton.SetActive(false);
-            backButton.SetActive(false);
         }
     }
 
@@ -164,7 +167,7 @@ public class FarmManager : MonoBehaviour
             buttonImages[toolNumber - 1].sprite = selectedButton;
         }
 
-        Debug.Log(toolNumber);
+        Debug.Log (toolNumber);
     }
 
     public void CheckSelection()
@@ -235,6 +238,6 @@ public class FarmManager : MonoBehaviour
         Debug.Log("Close Everything");
         harvestButton.SetActive(true);
         backButton.SetActive(true);
-        // gameOverPanel.SetActive(false);
+        Destroy (gameOverPanel);
     }
 }
